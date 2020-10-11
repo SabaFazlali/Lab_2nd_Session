@@ -1,0 +1,43 @@
+package com.company;
+
+public class Student {
+
+    //student's first name
+    private String fName;
+    //student's last name
+    private String lName;
+    //student ID
+    private String id;
+    //student's grade
+    private static float grade;
+
+
+    public Student(String fName, String lName, String id) {
+       this.fName = fName;
+        lName = lName;
+        id = id;
+        grade = 0;
+
+    }
+    public void print() {
+        System.out.println("Student's first name is:" + fName);
+        System.out.println("Student's ID is:" + id);
+        System.out.println("Student's grade is:" + grade);
+    }
+    //setter: grade
+    public void setGrade(float grade){
+        this.grade=grade;
+    }
+
+    //getter: first name
+    public void setFirstName(String firstName){
+        this.fName=firstName;
+    }
+
+    //getter: grade
+    public  float getGrade(){
+        return grade;
+    }
+
+
+}// end of Student class
